@@ -25,7 +25,10 @@ public class MenuOpciones {
                     System.out.println("Resultado: " + palabra1 + palabra2);
                     break;
                 case 2:
-                    // Implementar en una rama separada
+                    System.out.print("Ingrese una frase: ");
+                    String frase = scanner.nextLine();
+                    String[] palabras = frase.trim().split("\\s+"); // Divide la frase en palabras
+                    System.out.println("La frase contiene " + palabras.length + " palabras.");
                     break;
                 case 3:
                     // Implementar en una rama separada
