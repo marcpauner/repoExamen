@@ -14,11 +14,15 @@ public class MenuOpciones {
             System.out.print("Seleccione una opción: ");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();
             
             switch (opcion) {
                 case 1:
-                    // Implementar en una rama separada
+                    System.out.print("Ingrese la primera palabra: ");
+                    String palabra1 = scanner.nextLine();
+                    System.out.print("Ingrese la segunda palabra: ");
+                    String palabra2 = scanner.nextLine();
+                    System.out.println("Resultado: " + palabra1 + palabra2);
                     break;
                 case 2:
                     // Implementar en una rama separada
