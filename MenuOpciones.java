@@ -59,7 +59,7 @@ public class MenuOpciones {
                     }
                     break;
                 default:
-                    System.out.println("Opción no válida. Intente nuevamente.");
+                    System.out.println("Opcion no válida. Intente nuevamente.");
             }
         }
         scanner.close();
