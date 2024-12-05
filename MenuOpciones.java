@@ -31,8 +31,25 @@ public class MenuOpciones {
                     System.out.println("La frase contiene " + palabras.length + " palabras.");
                     break;
                 case 3:
-                    // Implementar en una rama separada
-                    break;
+                System.out.print("Ingrese una frase: ");
+    String fraseUsuario = scanner.nextLine();
+    System.out.print("Ingrese la letra que desea contar: ");
+    String letraInput = scanner.nextLine();
+
+    if (letraInput.isEmpty()) {
+        System.out.println("No se ingresó ninguna letra.");
+        break;
+    }
+    char letra = letraInput.charAt(0);
+    int contador = 0;
+
+    for (char c : fraseUsuario.toCharArray()) {
+        if (c == letra) {
+            contador++;
+        }
+    }
+    System.out.println("La letra '" + letra + "' aparece " + contador + " veces en la frase.");
+    break;
                 case 4:
                     System.out.print("¿Está seguro de que desea salir? (s/n): ");
                     String respuesta = scanner.nextLine();
